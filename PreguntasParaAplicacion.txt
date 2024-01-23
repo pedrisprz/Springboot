@@ -1,0 +1,21 @@
+﻿1|Cada sistema ERP es distinto y posee necesidades de potencia distintas.|Verdadero        
+1|La calidad de los componentes, la refrigeración o tecnologías como el ECC en la memoria RAM hacen más estables los servidores que ejecutan sistemas ERP frente a alternativas para el usuario final.|Falso
+1|Los usuarios que interactúan con el sistema ERP solo pueden usar PCs, tablets, smartphones u otros sistemas domésticos como cliente del servicio.|Falso
+1|Protección contra personas (ataques físicos y remotos), protección contra los elementos, disponibilidad del sistema y copia de seguridad son aspectos que deben tenerse en cuenta en la seguridad del sistema ERP.|Falso
+1|Es recomendable que el servidor en el que se instala un sistema ERP tenga componentes (procesador, RAM, discos, etc.) por debajo de la potencia mínima necesaria.|Falso
+1|La redundancia en los discos, ya sea con RAID o con sistemas de archivos redundantes, excluye la necesidad de establecer una política de copias de seguridad externas al sistema.|Falso
+1|Para la puesta en marcha de un sistema ERP Odoo, se recomienda utilizar el sistema operativo base Windows Server.|Falso
+1|Los contenedores, como Docker, ofrecen un rendimiento cercano al rendimiento nativo en comparación con las máquinas virtuales con hipervisor.|Verdadero
+1|Los sistemas operativos base, como Proxmox, simplifican la gestión tanto de máquinas virtuales como de contenedores, copias de seguridad de los mismos y almacenamiento en red.|Falso
+1|La potencia contratada en un servicio de IAAS no es relevante al considerar la preparación del servicio para instalar un sistema ERP.|Falso
+
+2|¿Cuáles son algunos factores que influyen en las necesidades de potencia de un sistema ERP?|Cantidad de datos almacenados|Marcas de hardware|Número de usuarios de redes sociales|Color de la interfaz
+2|En cuanto a la seguridad, ¿cuáles son aspectos que deben tenerse en cuenta en la preparación del servicio para instalar un sistema ERP?|Protección contra personas y elementos|Protección contra ataques|Ambas son correctas|Ninguna
+2|¿Qué redundancia se recomienda para los discos en la seguridad de los datos de un sistema ERP?|Redundancia en los discos con RAID o sistemas de archivos redundantes|Redundancia en la conexión a internet|Redundancia en la fuente de alimentación|Redundancia en la velocidad del procesador
+2|Para la puesta en marcha de un sistema ERP Odoo, ¿qué sistema operativo se recomienda?|Ubuntu Server|MacOS|Windows Server|Android
+2|¿Cuál es una alternativa a la virtualización con hipervisor para la preparación del servicio en un sistema ERP?|Contenedores como Docker|Máquinas virtuales con Virtualbox|Máquinas virtuales con Proxmox|Sistemas operativos base
+2|¿Qué aspecto no se menciona como parte de las medidas de protección básicas para el servidor en la preparación del servicio para instalar un sistema ERP?|Uso de antivirus|Uso de SAI|Refrigeración|Tecnología ECC en la memoria RAM
+2|En el contexto de la nube, ¿qué se debe tener en cuenta al contratar un servicio IAAS para la preparación del servicio en un sistema ERP?|La potencia contratada|El color de la interfaz del proveedor de la nube|La cantidad de datos en la nube|El número de emojis disponibles en la plataforma
+2|¿Qué función realiza Proxmox en la gestión de máquinas virtuales y contenedores en la preparación del servicio para instalar un sistema ERP?|Simplifica la gestión de máquinas virtuales y contenedores|Incrementa los costes de hardware|Actúa como un sistema operativo base|Reduce la potencia contratada
+2|¿Qué se recomienda en cuanto a la elección del hardware en la preparación del servicio para instalar un sistema ERP?|Utilizar hardware diseñado para servidores|Utilizar Raspberry Pi o Arduino|No considerar la calidad de los componentes|Optar por hardware de baja potencia
+2|¿Cuál es la recomendación en cuanto a la potencia del servidor en la preparación del servicio para instalar un sistema ERP?|Tener una potencia mínima necesaria para el sistema ERP|Pasarse en potencia para obtener un beneficio|No considerar la potencia del servidor|Optar por la potencia más baja disponible
