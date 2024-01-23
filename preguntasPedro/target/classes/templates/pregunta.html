@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th='http://thymeleaf.org'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Verdadero o Falso</title>
+
+    <!-- Enlace a Bootstrap CSS desde un CDN (Content Delivery Network) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+
+</head>
+<body>
+    <main>
+        <div th:if="${pregunta.tipo.equals('SC')}">
+            <h1 th:text="${pregunta.enunciado}"></h1>
+
+            <form action="pregunta" method="post">
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" th:value="${pregunta.respuesta1}"> <span th:text="${pregunta.respuesta1}"></span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" th:value="${pregunta.respuesta2}"> <span th:text="${pregunta.respuesta2}"></span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" th:value="${pregunta.respuesta3}"> <span th:text="${pregunta.respuesta3}"></span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" th:value="${pregunta.respuesta4}"> <span th:text="${pregunta.respuesta4}"></span>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="hidden" name="enunciado" th:value="${pregunta.enunciado}">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Comprobar" class="btn btn-success">
+                </div>
+            </form>
+            <a th:href="@{/pregunta}" class="btn btn-primary">Siguiente pregunta</a>
+        </div>
+        <div th:if="${pregunta.tipo.equals('VF')}">
+            <h1 th:text="${pregunta.enunciado}"></h1>
+
+            <form action="pregunta" method="post">
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" value="Verdadero"> Verdadero
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="resultado" value="Falso"> Falso
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="hidden" name="enunciado" th:value="${pregunta.enunciado}">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Comprobar" class="btn btn-success">
+                </div>
+            </form>
+            <a th:href="@{/pregunta}" class="btn btn-primary">Siguiente pregunta</a>
+        </div>
+    </main>
+
+    <!-- Scripts de Bootstrap (jQuery y Popper.js son necesarios) desde un CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

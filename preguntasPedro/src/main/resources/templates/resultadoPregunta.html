@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th='http://thymeleaf.org'>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+div {
+	text-align: center;
+	margin: 5px;
+}
+input[type="submit"] {
+  margin-top: 20px; 
+}
+</style>
+</head>
+<body>
+<div>
+<h1 th:if="${comprobacion == true}">Has acertado la pregunta</h1>
+<h1 th:if="${comprobacion == false}">Has fallado la pregunta</h1>
+</div>
+<div><a th:href="@{/home}">Volver al home</a></div>
+<div><a th:href="@{/pregunta}">Siguiente pregunta</a></div>
+</body>
+</html>
